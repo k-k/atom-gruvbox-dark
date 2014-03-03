@@ -1,0 +1,183 @@
+// The ui-variables file is provided by base themes provided by Atom.
+//
+// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
+// for a full listing of what's available.
+@import "ui-variables";
+@import "colors";
+
+.editor-colors {
+  background-color: @base03;
+  color: @base3;
+}
+
+.editor {
+  .invisible-character,
+  .indent-guide {
+    color: @base01;
+  }
+
+  .gutter {
+    background-color: @base02;
+  }
+
+  .gutter .line-number {
+    opacity: .75;
+  }
+
+  .gutter .line-number.folded,
+  .gutter .line-number:after,
+  .fold-marker:after {
+    color: @magenta;
+  }
+
+  .cursor {
+    border-color: @base3;
+  }
+
+  .selection .region {
+    background-color: @base01;
+    color: @base03;
+    opacity: .75;
+  }
+
+  .line-number.cursor-line-no-selection {
+    background-color: @base01;
+  }
+}
+
+.bracket-matcher {
+  background-color: @base3;
+  opacity: 0.3;
+}
+
+.comment {
+  color: @comment;
+  font-style: italic;
+}
+
+.entity {
+  color: @base1;
+}
+
+.keyword {
+  color: @red;
+}
+
+.keyword.other.phpdoc {
+  color: @base3;
+  font-weight: bold;
+}
+
+.keyword.other {
+  color: @green;
+}
+
+.function.construct {
+  color: @green;
+}
+
+.function.var {
+  color: @blue;
+}
+
+.storage.modifier {
+  color: @yellow;
+}
+
+.storage.type {
+  color: @green;
+}
+
+.constant {
+  color: @magenta;
+
+  &.numeric,
+  &.boolean {
+    color: @cyan;
+  }
+}
+
+.variable {
+  color: @blue;
+}
+
+.variable.other.property {
+  color: @base2;
+}
+
+.delimiter, .brace {
+  color: @red;
+}
+
+.delimiter.period {
+  color: @green;
+}
+
+.punctuation.variable {
+  color: @base0;
+}
+
+.punctuation.string {
+    color: @base1;
+}
+
+.punctuation.parameters,
+.punctuation.section.scope {
+    color: @orange;
+}
+
+.punctuation.section.embedded.begin.php,
+.punctuation.section.embedded.end.php {
+    color: @magenta;
+}
+
+.keyword.control {
+    color: @red;
+}
+
+.keyword.operator.class {
+    color: @yellow;
+}
+
+.keyword.operator.assignment {
+    color: @base1;
+}
+
+.function-call {
+    color: @base1;
+}
+
+.comparison {
+    color: @base2;
+}
+
+.invalid.deprecated {
+  text-decoration: underline;
+  color: @red;
+}
+
+.invalid.illegal {
+  color: @red;
+}
+
+.string {
+  color: @green;
+
+  .constant.character.escape {
+    color: @blue;
+  }
+
+  &.regexp {
+    color: @cyan;
+
+    .source.ruby.embedded,
+    .string.regexp.arbitrary-repitition {
+      color: @red;
+    }
+  }
+}
+
+.wrap-guide {
+    border-right: 3px dotted @base02;
+    opacity: .75;
+}
