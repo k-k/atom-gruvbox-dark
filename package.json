@@ -1,23 +1,23 @@
 {
-  "name": "gruvbox-dark",
-  "theme": "syntax",
-  "version": "0.0.0",
-  "private": true,
-  "description": "A Gruvbox inspired syntax theme",
-  "repository": {
-      "type": "git",
-      "url":  "https://github.com/kmfk/atom-gruvbox-dark",
-  },
-  "author": {
-    "name": "Keith Kirk",
-  },
-  "readme": "# Atom Gruvbox Dark Syntax Theme\n\n Inspired from the Vim [Gruvbox Theme](https://github.com/morhetz/gruvbox)\n\n ![](https://www.dropbox.com/s/ivocue2d16r8xby/atom-gruvbox-dark.png)"
-  "bugs": {
-    "url": "https://github.com/kmfk/atom-gruvbox/issues"
-  },
-  "homepage": "https://github.com/kmfk/atom-gruvbox",
-  "license": "MIT",
-  "engines": {
-    "atom": ">0.50.0"
-  }
+    "name": "gruvbox-dark",
+    "theme": "syntax",
+    "version": "0.0.0",
+    "private": true,
+    "description": "A Gruvbox inspired syntax theme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kmfk/atom-gruvbox-dark"
+    },
+    "author": {
+        "name": "Keith Kirk"
+    },
+    "readme": "# Atom Gruvbox Dark Syntax Theme\n\n Inspired from the Vim [Gruvbox Theme](https://github.com/morhetz/gruvbox)\n\n ![](https://www.dropbox.com/s/ivocue2d16r8xby/atom-gruvbox-dark.png)",
+    "bugs": {
+        "url": "https://github.com/kmfk/atom-gruvbox/issues"
+    },
+    "homepage": "https://github.com/kmfk/atom-gruvbox",
+    "license": "MIT",
+    "engines": {
+        "atom": ">0.50.0"
+    }
 }
