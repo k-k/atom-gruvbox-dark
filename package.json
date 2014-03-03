@@ -1,7 +1,7 @@
 {
   "name": "gruvbox-dark",
   "theme": "syntax",
-  "version": "0.1.0",
+  "version": "0.0.0",
   "private": true,
   "description": "A Gruvbox inspired syntax theme",
   "repository": {
