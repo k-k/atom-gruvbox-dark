@@ -1,23 +1,44 @@
-// The ui-variables file is provided by base themes provided by Atom.
-//
-// See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
-// for a full listing of what's available.
 @import "ui-variables";
 @import "colors";
 
+// Support for vim-mode package
+.vim-mode.command-mode:not(.mini) {
+  .cursor, .cursor.blink-off {
+    .block-cursor(hidden);
+  }
+
+  &.editor.is-focused {
+    .cursor, .cursor.blink-off {
+      .block-cursor;
+    }
+  }
+}
+
+.block-cursor(@visibility: visible) {
+  border: 0;
+  background-color: @base00;
+  visibility: @visibility;
+  opacity: 0.5;
+}
+
+// Editor Syntax Styles
 .editor-colors {
   background-color: @base03;
   color: @base3;
 }
 
 .editor {
-  .invisible-character,
-  .indent-guide {
+  .invisible-character {
     color: @base01;
   }
 
+  .indent-guide {
+    color: @base01;
+    opacity: .5;
+  }
+
   .gutter {
-    background-color: @base02;
+    background-color: @base03;
   }
 
   .gutter .line-number {
@@ -38,6 +59,11 @@
     background-color: @base01;
     color: @base03;
     opacity: .75;
+  }
+
+  .is-focused .line-number.cursor-line-no-selection,
+  .is-focused .line.cursor-line {
+    background-color: @base2;
   }
 
   .line-number.cursor-line-no-selection {
@@ -64,7 +90,7 @@
 }
 
 .keyword.other.phpdoc {
-  color: @base3;
+  color: @comment;
   font-weight: bold;
 }
 
@@ -180,4 +206,5 @@
 .wrap-guide {
     border-right: 3px dotted @base02;
     opacity: .75;
+    background-color: transparent;
 }
